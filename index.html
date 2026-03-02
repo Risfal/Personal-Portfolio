@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Risfal K P — ECE Student & Math Teacher</title>
+  <meta name="description" content="Second-year ECE student at CET Trivandrum. Building with FPGAs, learning Verilog & Xilinx, exploring 8051 embedded systems, and teaching mathematics." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="c-dot"></div>
+  <div id="c-ring"></div>
+
+  <!-- ══════════ NAVIGATION ══════════ -->
+  <nav id="nav">
+    <div class="nav-logo">
+      <div class="nav-logo-mark">MR</div>
+      Risfal K P
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Journey</a></li>
+      <li><a href="#contact" class="nav-cta">Connect</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#home" class="mm-link">Home</a>
+    <a href="#about" class="mm-link">Skills</a>
+    <a href="#projects" class="mm-link">Projects</a>
+    <a href="#experience" class="mm-link">Journey</a>
+    <a href="#contact" class="mm-link">Connect</a>
+  </div>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-inner">
+
+        <div>
+          <div class="hero-status">
+            <div class="status-dot"></div>
+            <span>2nd Year ECE · Open to Internships</span>
+          </div>
+
+          <div class="hero-subtitle">Electronics & Communication · CET Trivandrum</div>
+
+          <h1 class="hero-title">
+            Learning by<br>
+            actually<br>
+            <em id="typewriter-target">building</em>
+          </h1>
+
+          <p class="hero-desc">
+            Second-year ECE student experimenting with <strong>FPGAs</strong> and <strong>Verilog</strong>.
+            I built an IR proximity sensor with distance measurement on Xilinx — and I teach
+            <strong>mathematics</strong> on the side.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-gold">See My Work</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
+        </div>
+
+        <!-- Code Panel -->
+        <div class="hero-panel">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="hc-dot hc-dot-r"></div>
+              <div class="hc-dot hc-dot-y"></div>
+              <div class="hc-dot hc-dot-g"></div>
+              <span class="hc-title">risfal_profile.v</span>
+            </div>
+            <div class="hero-card-body">
+              <div class="code-block">
+                <div><span class="cm">// honest profile, year 2</span></div>
+                <div><span class="kw">module</span> <span class="fn">Risfal</span> (</div>
+                <div>&nbsp;&nbsp;<span class="kw">input</span>&nbsp;&nbsp;curiosity,</div>
+                <div>&nbsp;&nbsp;<span class="kw">output</span> projects</div>
+                <div>);</div>
+                <div>&nbsp;</div>
+                <div><span class="kw">parameter</span> YEAR&nbsp;&nbsp;&nbsp;= <span class="num">2</span>;</div>
+                <div><span class="kw">parameter</span> TOOL&nbsp;&nbsp;&nbsp;= <span class="str">"Xilinx Vivado"</span>;</div>
+                <div><span class="kw">parameter</span> STATUS&nbsp;= <span class="str">"always learning"</span>;</div>
+                <div>&nbsp;</div>
+                <div><span class="cm">// part-time</span></div>
+                <div><span class="kw">assign</span> job = <span class="fn">maths_teacher</span>;</div>
+                <div>&nbsp;</div>
+                <div><span class="kw">always</span> @(posedge idea)</div>
+                <div>&nbsp;&nbsp;<span class="fn">build</span>(it)<span class="type-cursor"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-cell">
+              <div class="stat-val" data-count="2">0</div>
+              <div class="stat-label">Years in ECE</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-val" data-count="1">0</div>
+              <div class="stat-label">FPGA Build</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-val" data-count="3">0</div>
+              <div class="stat-label">Tools Learning</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-val" data-count="2">0</div>
+              <div class="stat-label">Active Roles</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SKILLS ══════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-layout">
+
+        <div>
+          <div class="section-eyebrow reveal">About Me</div>
+          <h2 class="about-title reveal reveal-d1">A sophomore who<br>builds first,<br><em>asks later</em></h2>
+          <p class="about-bio reveal reveal-d2">
+           I’m Muhammad Risfal K P, a second-year ECE student at the College of Engineering Trivandrum, exploring Embedded Systems and VLSI.
+I’ve built an FPGA-based IR proximity sensor with distance measurement using Verilog and Xilinx Vivado, working on both hardware and simulation.
+I’m currently learning C and Assembly for the 8051 microcontroller.
+Alongside engineering, I work as a part-time mathematics tutor at Yourstutor.
+I believe in learning by building — turning concepts into working systems.
+          </p>
+          <p class="about-bio reveal reveal-d2" style="margin-top:-14px">
+            I believe in learning by doing. Every concept sticks better when there's a real
+            circuit or working simulation behind it.
+          </p>
+          <div class="about-tags reveal reveal-d3">
+            <span class="tag">Verilog</span>
+            <span class="tag">Xilinx Vivado</span>
+            <span class="tag">FPGA</span>
+            <span class="tag">C (learning)</span>
+            <span class="tag">Assembly (learning)</span>
+            <span class="tag">8051</span>
+            <span class="tag">Logic Circuit Design</span>
+            <span class="tag">Mathematics</span>
+          </div>
+        </div>
+
+        <div class="skills-grid reveal reveal-d1">
+
+          <div class="skill-card s-gold">
+            <div class="skill-icon">⬡</div>
+            <h3>FPGA & Verilog</h3>
+            <ul class="skill-list">
+              <li>Basic Verilog — modules, ports, always blocks</li>
+              <li>Xilinx Vivado — synthesis & implementation</li>
+              <li>IR proximity sensor with distance measurement</li>
+              <li>Digital logic design fundamentals</li>
+            </ul>
+            <div class="skill-level-bar">
+              <div class="skill-level-label">Comfort Level</div>
+              <div class="skill-bar">
+                <div class="skill-fill s-fill-gold" style="width: 38%"></div>
+              </div>
+              <div class="skill-level-note">Beginner — actively building</div>
+            </div>
+          </div>
+
+          <div class="skill-card s-sky">
+            <div class="skill-icon">⬢</div>
+            <h3>Embedded — 8051</h3>
+            <ul class="skill-list">
+              <li>Currently learning C for embedded systems</li>
+              <li>Learning 8051 Assembly language</li>
+              <li>AT89C51 architecture — registers, I/O</li>
+              <li>Understanding interrupts & timers</li>
+            </ul>
+            <div class="skill-level-bar">
+              <div class="skill-level-label">Comfort Level</div>
+              <div class="skill-bar">
+                <div class="skill-fill s-fill-sky" style="width: 20%"></div>
+              </div>
+              <div class="skill-level-note">Early stage — learning now</div>
+            </div>
+          </div>
+
+          <div class="skill-card s-mint">
+            <div class="skill-icon">∑</div>
+            <h3>Mathematics</h3>
+            <ul class="skill-list">
+              <li>Part-time math teacher (currently active)</li>
+              <li>Strong analytical and problem-solving base</li>
+              <li>Class 11 and 12 Maths</li>
+    
+            </ul>
+            <div class="skill-level-bar">
+              <div class="skill-level-label">Comfort Level</div>
+              <div class="skill-bar">
+                <div class="skill-fill s-fill-mint" style="width: 82%"></div>
+              </div>
+              <div class="skill-level-note">Proficient — teaching others</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section id="projects">
+    <div class="container">
+
+      <div class="projects-header">
+        <div>
+          <div class="section-eyebrow reveal">What I've Built</div>
+          <h2 class="projects-title reveal reveal-d1">Real <em>Projects,</em><br>Real Learning</h2>
+        </div>
+        <div class="projects-count reveal">01 done · more incoming</div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Main project — wide -->
+        <div class="project-card wide reveal">
+          <div class="project-thumb thumb-bg-gold">
+            <div class="project-thumb-inner">
+              <div class="thumb-icon">📡</div>
+            </div>
+            <div class="thumb-tags">
+              <span class="p-tag">Verilog</span>
+              <span class="p-tag">Xilinx Vivado</span>
+              <span class="p-tag">FPGA</span>
+              <span class="p-tag">IR Sensor</span>
+            </div>
+            <svg class="thumb-circuit" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="20" y1="100" x2="80" y2="100" stroke="rgba(240,192,96,0.15)" stroke-width="1"/>
+              <line x1="80" y1="100" x2="80" y2="40" stroke="rgba(240,192,96,0.15)" stroke-width="1"/>
+              <line x1="80" y1="40" x2="220" y2="40" stroke="rgba(240,192,96,0.15)" stroke-width="1"/>
+              <circle cx="80" cy="100" r="3" fill="rgba(240,192,96,0.25)"/>
+              <circle cx="80" cy="40" r="3" fill="rgba(240,192,96,0.25)"/>
+              <line x1="220" y1="40" x2="220" y2="160" stroke="rgba(240,192,96,0.15)" stroke-width="1"/>
+              <line x1="220" y1="160" x2="280" y2="160" stroke="rgba(240,192,96,0.15)" stroke-width="1"/>
+              <circle cx="220" cy="40" r="3" fill="rgba(240,192,96,0.25)"/>
+              <circle cx="220" cy="160" r="3" fill="rgba(240,192,96,0.25)"/>
+              <rect x="120" y="78" width="60" height="44" stroke="rgba(240,192,96,0.12)" stroke-width="1" fill="none"/>
+              <text x="150" y="105" font-size="8" fill="rgba(240,192,96,0.2)" text-anchor="middle" font-family="monospace">FPGA</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-number">Project / 01 · Completed</div>
+            <h3>IR Proximity Sensor with Distance Measurement</h3>
+            <p>
+              Designed and implemented an infrared proximity sensor system on an FPGA board using Verilog HDL
+              and Xilinx Vivado. The system detects nearby objects and estimates distance by timing IR pulse reflections,
+              with real-time output. My first actual hardware project — I learned the hard way that simulation
+              and real hardware behave very differently.
+            </p>
+            <div class="project-honest-box">
+              <div class="honest-label">Honest reflection</div>
+              <div class="honest-text">
+                Debugging on real hardware was tougher than expected. Spent a lot of time on timing constraints
+                and sensor threshold calibration. Got it working after plenty of iteration — and learned
+                more from the failures than the successes.
+              </div>
+            </div>
+            <div class="project-links" style="margin-top: 20px;">
+              <a href="#" class="p-link p-link-primary">View Details →</a>
+              <a href="#" class="p-link">GitHub →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- In progress -->
+        <div class="project-card project-card--soon reveal reveal-d1">
+          <div class="project-thumb thumb-bg-sky">
+            <div class="project-thumb-inner">
+              <div class="thumb-icon" style="animation-delay:0.8s">⚙️</div>
+            </div>
+            <div class="thumb-tags">
+              <span class="p-tag">8051</span>
+              <span class="p-tag">C / Assembly</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">Project / 02 · Planned</div>
+            <h3>8051 Embedded Project</h3>
+            <p>
+              Currently learning C and Assembly for the AT89C51. Planning a practical project
+              once I have enough confidence with the fundamentals — likely something involving
+              I/O control and basic sensor interfacing.
+            </p>
+            <div class="wip-badge">
+              <span class="wip-dot"></span>
+              Learning prerequisites now
+            </div>
+          </div>
+        </div>
+
+        <!-- Teaching side -->
+        <div class="project-card project-card--soon reveal reveal-d2">
+          <div class="project-thumb thumb-bg-mint">
+            <div class="project-thumb-inner">
+              <div class="thumb-icon" style="animation-delay:0.3s">📐</div>
+            </div>
+            <div class="thumb-tags">
+              <span class="p-tag">Teaching</span>
+              <span class="p-tag">Mathematics</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-number">Side Role · Active</div>
+            <h3>Part-Time Mathematics Teacher</h3>
+            <p>
+              Teaching maths to students outside of college hours. It's changed how I think —
+              explaining something clearly forces you to actually understand it.
+              Also helps with the analytical side of ECE.
+            </p>
+            <div class="wip-badge wip-badge--active">
+              <span class="wip-dot wip-dot--active"></span>
+              Currently active
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ JOURNEY ══════════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="exp-layout">
+
+        <div class="exp-sidebar">
+          <div class="section-eyebrow reveal">Journey</div>
+          <h2 class="reveal reveal-d1">Where I<br>am <em>right<br>now</em></h2>
+          <p class="reveal reveal-d2">
+            An honest account of where I've been, what I've built,
+            and what I'm actively working on as a second-year student.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="tl-date">Now</div>
+            <div><div class="tl-dot tl-dot--active"></div></div>
+            <div class="tl-content">
+              <div class="tl-role">Learning C & Assembly for 8051</div>
+              <div class="tl-org">Self-study · Alongside ECE Year 2</div>
+              <div class="tl-desc">
+                Actively studying embedded C and 8051 assembly — registers, memory-mapped I/O,
+                interrupts, and timers. Goal is to be able to write real firmware that controls hardware.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-d1">
+            <div class="tl-date">Now</div>
+            <div><div class="tl-dot tl-dot--active"></div></div>
+            <div class="tl-content">
+              <div class="tl-role">Part-Time Mathematics Teacher</div>
+              <div class="tl-org">Independent · Ongoing</div>
+              <div class="tl-desc">
+                Teaching maths to students while managing engineering coursework. Has strengthened
+                my analytical thinking and deepened understanding of the mathematical foundations
+                in electronics.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-d2">
+            <div class="tl-date">2024</div>
+            <div><div class="tl-dot"></div></div>
+            <div class="tl-content">
+              <div class="tl-role">IR Proximity Sensor — First FPGA Project</div>
+              <div class="tl-org">Logic Circuit Design Course Project</div>
+              <div class="tl-desc">
+                Built an IR-based proximity sensor with distance measurement using Verilog on
+                Xilinx Vivado. First real experience going from simulation to actual hardware.
+                Learned about timing, signal conditioning, and debugging physical circuits.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-d3">
+            <div class="tl-date">2024</div>
+            <div><div class="tl-dot"></div></div>
+            <div class="tl-content">
+              <div class="tl-role">Verilog & Xilinx Vivado — Getting Started</div>
+              <div class="tl-org">ECE Coursework · CET</div>
+              <div class="tl-desc">
+                Started learning Verilog HDL: modules, combinational/sequential logic, always blocks,
+                and testbenches. Got comfortable navigating Xilinx Vivado for synthesis, implementation,
+                and bitstream generation.
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-d4">
+            <div class="tl-date">2023</div>
+            <div><div class="tl-dot"></div></div>
+            <div class="tl-content">
+              <div class="tl-role">B.Tech — Electronics & Communication Engineering</div>
+              <div class="tl-org">College of Engineering Trivandrum · Started</div>
+              <div class="tl-desc">
+                Joined CET for ECE. First year: circuit theory, signals & systems, digital electronics,
+                and engineering mathematics. Quickly discovered that digital design and hardware
+                were the parts I found most interesting.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="contact-left">
+          <div class="section-eyebrow reveal">Connect</div>
+          <h2 class="reveal reveal-d1">Let's talk<br><em>circuits</em><br>or calculus</h2>
+          <p class="reveal reveal-d2">
+            Whether you want to collaborate on an FPGA project, discuss embedded systems,
+            or need a maths tutor — I'm happy to connect. Also open to internships where I can
+            learn while contributing.
+          </p>
+
+          <div class="contact-socials reveal reveal-d3">
+
+            <a href="https://linkedin.com/in/risfal-kp" class="social-row" target="_blank" rel="noopener">
+              <div class="social-row-icon">in</div>
+              <div class="social-row-info">
+                <div class="social-row-name">LinkedIn</div>
+                <div class="social-row-handle">linkedin.com/in/risfal_kp</div>
+              </div>
+              <div class="social-row-arrow">→</div>
+            </a>
+
+            <a href="https://github.com/Risfal" class="social-row" target="_blank" rel="noopener">
+              <div class="social-row-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div class="social-row-info">
+                <div class="social-row-name">GitHub</div>
+                <div class="social-row-handle">github.com/risfal</div>
+              </div>
+              <div class="social-row-arrow">→</div>
+            </a>
+
+            <a href="mailto:muhammadrisfal352@gmail.com" class="social-row">
+              <div class="social-row-icon">@</div>
+              <div class="social-row-info">
+                <div class="social-row-name">Email</div>
+                <div class="social-row-handle">risfal@example.com</div>
+              </div>
+              <div class="social-row-arrow">→</div>
+            </a>
+
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-d1" id="contact-form" novalidate>
+
+          <div class="form-row">
+            <div>
+              <label class="form-label" for="name">Your Name</label>
+              <input id="name" type="text" class="form-input" placeholder="Full name" required />
+            </div>
+            <div>
+              <label class="form-label" for="email">Email</label>
+              <input id="email" type="email" class="form-input" placeholder="your@email.com" required />
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label" for="subject">I want to talk about</label>
+            <input id="subject" type="text" class="form-input" placeholder="FPGA / Internship / Maths tutoring / Other" />
+          </div>
+
+          <div>
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Tell me what's on your mind…" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" id="form-btn">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><strong>RISFAL</strong> · ECE Year 2 · CET</div>
+        <div class="footer-copy">© 2026 Muhammad Risfal K P · Trivandrum, Kerala</div>
+        <div class="footer-links">
+          <a href="#home">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
